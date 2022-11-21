@@ -67,6 +67,39 @@
                   <use href="./Images/symbol-defs.svg#cross"></use>
                 </svg>
               </button>
+              <strong class="modal-label">Залиште свої дані, ми вам передзвонимо</strong>
+              <form class="modal-form" name="modal-form">
+                <div class="modal-form-group" role="group">
+                  <label class="modal-form-label" for="user_name">Ім'я</label>
+                  <div class="modal-form-wrapper">
+                    <input class="modal-form-field" type="text" id="user_name" name="user_name" required>
+                    <svg class="modal-icon" width="12" height="12">
+                      <use href="./Images/symbol-defs.svg#User"></use>
+                    </svg>
+                  </div>
+                    <label class="modal-form-label" for="user_phone">Телефон</label>
+                  <div class="modal-form-wrapper">
+                    <input class="modal-form-field" type="tel" id="user_phone" name="user_phone" required>
+                    <svg class="modal-icon" width="13" height="13">
+                      <use href="./Images/symbol-defs.svg#phone"></use>
+                    </svg>
+                  </div>
+                    <label class="modal-form-label" for="user_mail">Пошта</label>
+                  <div class="modal-form-wrapper">
+                    <input class="modal-form-field" type="email" id="user_mail" name="user_mail" required>
+                    <svg class="modal-icon" width="15" height="12">
+                      <use href="./Images/symbol-defs.svg#mail"></use>
+                    </svg>
+                  </div>
+                  <label class="modal-form-label" for="user_message">Коментар</label>
+                  <textarea class="modal-form-field modal-textarea" name="user_message" id="user_message" rows="6" placeholder="Введіть текст"></textarea>
+                </div>
+                <div class="agreement-group" role="group">
+                  <input class="modal-checkbox" type="checkbox" id="agreement">
+                  <label class="agreement" for="agreement">Погоджуюся з розсилкою та приймаю <a class="agreement-link" href="#">Умови договору</a> </label>
+                </div>
+                <button class="modal-form-btn">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
@@ -538,6 +571,13 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="subscription">
+        <p class="call-to-action">Підпишіться на розсилку</p>
+        <form class="subscription-form">
+            <label><input class="subscription-email" type="email" name="user_email" placeholder="E-mail" required></label>
+            <button class="subscription-btn" type="submit">Підписатися</button>
+        </form>
         </div>
       </div>
     </footer>
