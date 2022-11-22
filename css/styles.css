@@ -294,6 +294,7 @@ button {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  margin-bottom: 12px;
 
   color: var(--primary-title-color);
 }
@@ -314,7 +315,7 @@ button {
   color: #757575;
 }
 .modal-form-label:first-child {
-  margin-top: 12px;
+  margin-top: 0;
 }
 .modal-form-field {
   width: 100%;
@@ -327,6 +328,9 @@ button {
   border-radius: 4px;
 
   transition: border var(--animate), outline var(--animate);
+}
+.modal-form-group {
+  margin-bottom: 20px;
 }
 .modal-form-field:hover {
   border: 1px solid var(--accent-color);
@@ -349,7 +353,6 @@ button {
 .modal-textarea {
   resize: none;
   height: 120px;
-  margin-bottom: 20px;
   padding: 12px 16px;
 }
 .agreement-group {
@@ -769,7 +772,7 @@ button {
 }
 /* subscription form */
 .subscription {
-  margin-left: 93px;
+  margin-left: auto; 
 }
 .subscription-email {
   width: 358px;
